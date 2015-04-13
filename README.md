@@ -2,7 +2,7 @@
 
 特设网站
 
-  [http://ituring.github.io/github-book/](http://ituring.github.io/github-book/)
+  [http://ituring.github.io/first-pr/](http://ituring.github.io/first-pr/)
 
 Git冲突时的解决方法
 
