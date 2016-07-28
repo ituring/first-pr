@@ -7,4 +7,8 @@
 Git冲突时的解决方法
 
 -  [Resolving merge conflicts](https://help.github.com/articles/resolving-merge-conflicts/)
+<<<<<<< HEAD
 -  [Resolving a merge conflict from the command line](https://help.github.com/articles/rlving-a-merge-conflict-from-the-command-line/)
+=======
+-  [Resolving a merge conflict from the command line](https://help.gihub.com/articles/resolving-a-merge-conflict-from-the-command-line/)
+>>>>>>> a4f9aa7820cf35befcc9197d538677fcec536a4a
