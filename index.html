@@ -1,1 +1,542 @@
-
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset='utf-8' />
+        <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+        <meta name="description" content="Wdpress69 : " />
+        
+        <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+            
+            <title>GitHub入门与实践 : 第一个 Pull Request 特设网站</title>
+            
+            <script type="text/javascript">
+                // var _gaq = _gaq || [];
+                //   _gaq.push(['_setAccount', 'UA-1537271-13']);
+                //   _gaq.push(['_trackPageview']);
+                //   (function() {
+                //     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                //     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                //     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                //   })();
+                </script>
+            </head>
+    
+    <body>
+        
+        <!-- HEADER -->
+        <div id="header_wrap" class="outer">
+            <header class="inner">
+                <a id="forkme_banner" href="https://github.com/ituring/first-pr">Give me Pull Request</a>
+                
+                <h1 id="project_title">第一个 Pull Request</h1>
+                <h2 id="project_tagline">GitHub入门与实践</h2>
+                
+                <section id="wdpress">
+                    <a class="wdpress_link" href="http://www.ituring.com.cn/book/1581">GitHub入门与实践</a>
+                </section>
+            </header>
+        </div>
+        
+        <!-- MAIN CONTENT -->
+        <div id="main_content_wrap" class="outer">
+            <section id="main_content" class="inner">
+                <h3>尝试发送Pull Request！</h3>
+                
+                
+                <p>本网站是为了让《GitHub入门与实践》读者能尝试在GitHub上进行第一次Pull Request而专门设立的。</p>
+                <p>感谢您购买本书，非常高兴您能亲自尝试书中的例子。</p>
+                <p>本网站采用了GitHub Pages服务，点击页面上边的「Give me Pull Request」就可以查看本网站的源代码仓库。</p>
+                
+                
+                <h3>购买链接</h3>
+                <ul>
+                    <li><a href="http://www.ituring.com.cn/book/1581">图灵</a></li>
+                    <li><a href="http://item.jd.com/11733256.html">京东</a></li>
+                    <li><a href="http://product.china-pub.com/4727673">互动出版网</a></li>
+                    <li><a href="http://product.dangdang.com/23738317.html">当当</a></li>
+                    <li><a href="http://www.amazon.cn/GitHub%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E8%B7%B5-%E5%A4%A7%E5%A1%9A%E5%BC%98%E8%AE%B0/dp/B011LPUB4M/ref=sr_1_1?s=books&ie=UTF8&qid=1459922267&sr=1-1&keywords=GitHub%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E8%B7%B5">亚马逊中国</a></li>
+                </ul>
+                
+                <h3>注意</h3>
+                
+                <p>管理员有权拒绝与本书无关内容，或者对他人的诽谤等Pull Request。</p>
+                
+                <p>向本代码仓库发起Pull Request的用户基本上都会被授予相应的权限，您也可以作为Pull Request的接收者，来进行试验。</p>
+                
+                <p>但是，如果获得权限后您作为Pull Request接收者有任何不合适的行为的话，管理员有权收回您的权限。</p>
+                
+                <p>目前，本书里涉及到的示例仓库，现在由本人（译者）以及志愿者（包括发起Pull Request的读者）来维护。然而，在将来随着时间的流逝可能会出现响应不及时的现象，甚至无人响应的可能性。请各位读者参考一下第7章或者代码仓库中的文档，协助我们。</p>
+                
+                <h3>读者来稿</h3>
+                <p>您如果有对本书的读后感，或者只是想单纯测试一下，都可以发送Pull Request。</p>
+                <p>(现共有<span id="impression_num"></span>条用户来稿)</p>
+                <p class="impression">2016-10-31 尝试pull-request。</p>
+                <p class="impression">诗的远方，只要有你的存在，那么诗一直有人在读，远方不在遥远</p>
+                <p class="impression">希望有一天我可以成为我最羡慕的一个人，因为你成为了我身边的一道靓丽的风景线</p>
+                <p class="impression">这本书真是详细到令人发指。2016-10-25</p>
+                <p class="impression">naive！</p>
+                <p class="impression">写感想好麻烦。。。。。<a href="https://github.com/killandy">@killandy</a> </p>
+                <p class="impression" style="color:#DC291E;font-family:'microsoft yahei';text-shadow: 1px 1px 1px #ccc;">小白Wendy入门学习中，感谢作者，很不错.(<a target="_blank" href="https://github.com/wendysel">@wendysel</a>)</p>
+                <p class="impression">jintianxiayu !!!</p>
+                <p class="impression">hahahahahaha</p>
+                <p class="impression">good book!!</p>
+                <p class="impression" style="color:#55DDEE;" onclick='javascript:alert("hello world~")'>感谢作者/译者的努力！</p>
+                <p class="impression">第一次学习GitHub,感觉很不错!</p>
+                <p class="impression">真的非常不错，日本人写的技术书，很好！</p>
+                <p class="impression">感谢作者和译者。看了有一半了。xiuxiubiu。</p>
+                <p class="impression">虽然有部分内容已经过时了，但是大部分还是跟的上当前的GitHub上的最新内容的。且单就入门这一块而言，这本书大概是最好的学习材料了吧，推荐这本书。</p>
+                <p class="impression">美国的华莱士，比你们不知高到哪里去了</p>
+                <p class="impression">很喜欢分布式编程，希望区块链可以带来有一次互联网革命</p>
+                <p class="impression">苟利国家生死以 岂能祸福趋避之</p>
+                <p class="impression">第一次学习GitHub,感觉很不错!感谢作者!</p>
+                <p class="impression">非常不错的一本书,讲解的很详细,通俗易懂!</p>
+                <p class="impression">test</p>
+                <p class="impression">以前用过Github,但苦于没有一本书可以系统的讲解，读了本书才发现github如此强大，我爱开源!</p>
+                <p class="impression">书很不错，感谢作者以及图灵社区！自己针对1-5章的内容作了个简要的总结笔记，在自己的个人博客 <a href="http://codeshold.me/2016/09/GitHub_Tips.html">codeshold.me</a>和图灵社区都有分享<a href="http://www.ituring.com.cn/article/264697">GitHub Tips</a>，希望能和大家多多的交流</p>
+                <p class="impression">谢谢,很好,学习</p>
+                <p class="impression">详细且逻辑清晰，而且排版特别好，感谢！</p>
+                <p class="impression">这本书很实用，很多方面都介绍的特别的细致</p>
+                <p class="impression">嗯，很好</p>
+                <p class="impression">nsc-PWN first try of git push 2016/8/21</p>
+                <p class="impression">一本很详细的实战书，加深对github的使用，2016-9-20</p>
+                <p class="impression">看了一半了，书不错。以后大家多多交流 <a href="https://github.com/lw1024">@luwei</a></p>
+                <p class="impression">
+                我终于学会用github了，谢谢作者和译者！！<a href="https://github.com/zhangjian27">(@zhangjian27)</a>
+                </p>
+                <p class="impression"> This is a great book! It's my first time trying pull request @Cnetwork</p>
+                <p class="impression">还在持续学习中，不错的书，能够快速理解gitbub。2016-08-17</p>
+                <p class="impression"><strong style="color:#40A7F0">千言万语一句话：好作者！好译者！好平台！好<a href="https://github.com/ifangli" style="color:orange">@ifangli</a>~(@^_^@)~ </strong>&nbsp;&nbsp;@2016-8-12</p>
+                <p class="impression">just try pull request --by 00x00x00x</p>
+                <p class="impression">commit by sjxuan at 20161020210200</p>
+                <p class="impression">这本书非常不错！！</p>
+                <p class="impression">lsm非常喜欢这本书，写的very good,must顶起来</p>
+                <p class="impression">非常好的入门资料，还可以指导大家亲自试试！ -- jb</p>
+                <p class="impression">谢谢作者和译者！第一次尝试pull request (<a href="https://github.com/KangZhiDong">@KangZhiDong</a>)</p>
+                <p class="impression">这本书很不错，学习了git相关知识，那个learngitbranching的网页做的很不错(<a href="https://github.com/gonglijian600">@GeorgeGong</a> @2016-08-07)</p>
+                <p class="impression">《github入门与实践》很好，赞~~~(<a href="https://github.com/Lshango">@LshangoWon</a>)，2016/08/03 </p>
+                <p class="impression">对于初学者的我来说，很赞的福利!!!--->(<a href="https://github.com/LuHanjia">@LuHanjia</a>)</p>
+                <p class= "impression"> 越努力，越幸运！ --Adele love Adele's</p>
+                <p class="impression"> 赞</p>
+                <p class="impression"> 这是一本值得细细品味的书(@yZhou916)</p>
+                <p class= "impression"> a good book for a github starter! --Karen</p>
+                <p class="impression">first try of using github.--Billy</p>
+                <p class="impression">很不错的一本书，非常适合入门，test my first pr -- since1991-hy</p>
+                <p class="impression">很浅显易懂的书，但需要一些基层的linux语法才能学得更愉快！</p>
+                <p class="impression">这书翻译的太好了>(<a href="https://github.com/H37927">@H37927</a>)</p>
+                <p class="impression">第一次接触github感觉这个东西对于协同开发确实有很大的帮助(<a href="https://github.com/whiteNight0">@yang</a>)</p>
+                <p class="impression">描述的很清楚！！点赞！！(<a href="https://github.com/WangYixin-Tom">@WangYixin-Tom</a>)</p>
+                <p class="impression">第一次pull request，想想就很激动呢！>(<a href="https://github.com/Wangjunyu">@Wangjunyu</a>)</p>
+                <p class="impression">《github入门与实践》不错不错(真正的前排哦)<a href="https://github.com/leavefly">@leavefly</a> </p>
+                <p class="impression">感谢作者提供的这个实际操作的平台。助我迈入社会化编程第一步。万分感谢！！！<a href="https://github.com/694880911">@donzell</a></p>
+                <p class="impression">笔者真是很贴心,提供了这样一个平台,前排显示,<a href="https://github.com/turbokerbel">@TurboKernel</a> </p>
+                <p class="impression">书很好，测试教程好用不 (<a href="https:///github.com/supernever">@supernever</a>) </p>
+                <p class="impression">好书，实践GitHub第一步，感谢作者！zhangchen 2016-7-11</p>
+                <p class="impression">这本书从内容设置和实践程度，均循循善诱，非常感谢作者让我们快速掌握 2016-7-11 </p>
+                <p class="impression">学习GitHub入门与实践，感谢本书提供的测试平台！echoorchid-2016-7-7</p>
+                <p class="impression">感谢作者的分享, PS:李禹霖棒棒哒, 加油学习!!!!</p>
+                <p class="impreesion">《GitHub入门与实践》助我走向程序人生。我也要坐第一排，是我吗? 期待呢~~~<a href="https://github.com/timannie">@JayHan</a>,2016/07/03 </p>
+                <p class="impression">感谢作者提供的这个平台，可以让做为新手的自己也来参与编辑并可以发送Pull Request。<a href="https://github.com/mazhanfei">@mazhanfei</a>,2016/07/05</p>
+                <p class="impression">《GitHub入门与实践》助我走向程序人生。我也要坐第一排，是我吗? 期待呢~~~<a href="https://github.com/timannie">@JayHan</a>,2016/07/03 </p>
+                <p class="impression">我来了</p>
+                <p class="impression">楼下，才是最前面！不好意思</p>
+                <p class="impression">虽然我是最后来的,但是我想写到最前面,多谢了作者</p>
+                <p class="impression">学习中。。。</p>
+                <p class="impression">作为一个新人。。。。</p>
+                <p class="impression">此书帮我摆脱too young too simple！!</p>
+                <p class="impression">果断一楼! 想跟我抢, 年轻人们还是 naive 啊! @luokun</p>
+                <p class="impression">这本书写的太详细了，真心推荐小白学习使用(2016.06.15)留下足迹，@SparkMan</p>
+                <p class="impression">第一次敢于使用pull request功能，确实非常实用 （@mmssddss）</p>
+                <p class="impression">亲手发送第一个Pull Request，鸡冻～(2016.06.04)</p>
+                <p class="impression">越来越熟悉git和github，感谢！！</p>
+                <p class="impression">这本书讲的挺仔细，挺好！</p>
+                <p class="impression">第一次玩这个，试一试，感谢作者的辛勤付出!</p>
+                <p class="impression">这是公认的好书,希望这样的好书更多一点<a href="http://www.mygolang.cn">欢迎关注我的博客</a></p>
+                <p class="impression">Hello world! From:QianFan ^_^ </p>
+                <p class="impression">为了吃方便面 留言(<a href="https://github.com/NicholasChong">@NicholasChong</a>).</p>
+                <p class="impression">感谢编者与译者，搭建的这个项目 解放了初学者的胆怯心理。（2015/5/25）(<a href="https://github.com/AdamQwy">@AdamQwy</a>)</p>
+                <p class="impression">This is blazing's PR.</p>
+                <p class="impression">试一试Pull Request.</p>
+                <p class="impression">my first pr! thanks author(@lumpy)</p>
+                <p class="impression">试一下</p>
+                <p class="impression">This is Patrick.</p>
+                <p class="impression">画蛇添足以下</p>
+                <p class="impression">nice book!~ 2016.5.2 (<a href="https://github.com/SecondJ">@SecondJ</a>)</p>
+                <p class="impression">凡事都要动手做一下(2016/05/03)</p>
+                <p class="impression">It's my first Pull Request.Thank you for your guide.</p>
+                <p class="impression">Really nice book! Many thanks!</p>
+                <p class="impression">This book helps me to be familiar with git and github, it's really useful!(<a href="https://github.com/LYyI">@LYyI</a>)(2016/04/29)</p>
+                <p class="impression"> 非常好的一本git和github入门书籍 </p>
+                <p class="impression">之前一直对分支这块内容不是很明白，看了这本书，收货真的很大！</p>
+                <p class="impression">很好的一本入门书，讲解清楚，更棒的是有配套实践！GitHub真是个大宝库，宝宝们快来学习学习～</p>
+                <p class="impression">非常NICE的一本书,既有git的基本用法,更有github网站的完整介绍（精华）,现在对Github Page超感兴趣,虽然是二级域名,也是高大上~谢谢作者和译者(2016/04/10)(<a href="https://github.com/chvin">@chvin</a>)</p>
+                <p class="impression">本不错的一本书，赞！！！。(2016/04/06)(<a href="https://github.com/jamsonwoo">@jamsonwoo</a>)</p>
+                <p class="impression">非常感谢！很少有书籍有这样的服务了，真是良心书。(2016/04/06)(<a href="https://github.com/jamsonwoo">@jamsonwoo</a>)</p>
+                <p class="impression">作者用苦良心，译者同样用苦良心！真心感谢！(<a href="https://github.com/xpleaf">@xpleaf</a>)</p>
+                <p class="impression">日本人写的书不错，手把手教了 (<a href="https://github.com/dunizb">@dunizb</a>)</p>
+                <p class="impression">哈哈哈，第一次哎</p>
+                <p class="impression">快速上手学习github，留念 (<a href="https://github.com/juncaijames">@juncaijames</a>)</p>
+                <p class="impression">这本书让我对github有了比较全面的认识和理解，thx (<a href="https://github.com/WellLiao">@WellLiao</a>)</p>
+                <p class="impression">The book is very useful</p>
+                <p class="impression">学习Github，测试Pull Request。(<a href="https://github.com/shuntianxia">@shuntianxia</a>)</p>
+                <p class="impression">生命在于折腾嘛，哈哈！~(<a href="https://github.com/RyanYans">@RyanYans</a>)</p>
+                <p class="impression">学会提交PR了！争取早日为开源贡献力量！(<a href="https://github.com/yozol">@yozol</a>)</p>
+                <p class="impression">提供的PR动手练习很赞！</p>
+                <p class="impression">it's a book about how to use the github to work better.</p>
+                <p class="impression">好资源，努力学习img~</p>
+                <p class="impression">萱萱</p>
+                <p class="impression">好好学习，天天向上</p>
+                <p class="impression">受益匪浅</p>
+                <p class="impression">生活不是欲望，而是一种追求...</p>
+                <p class="impression">为我家吴磊立个flag！O(∩_∩)O哈哈~从此哪里都有吴磊宝宝的身影~(づ｡◕‿‿◕｡)づ</p>
+                <p class="impression">I think this book is the one I need, Thanks.</p>
+                <p class="impression">非常幸运能读到这本书，很不错.(<a href="https://github.com/joywt">@joywt</a>)</p>
+                <p class="impression">This book is very useful!!>(<a href="https://github.com/duaneya">@duaneya</a>)</p>
+                <p class="impression">这本书太好了，受益匪浅，是GitHub入门必备的!(<a href="https://github.com/liuzezhong">@liuzezhong</a>)</p>
+                <p class="impression">译者太体贴了:）</p>
+                <p class="impression">来自《GitHub入门与实践》--pull request(<a href="https://github.com/PrinceChou">@Peach</a>)</p>
+                <p class="impression">学到了很多，希望作者带给我们更好的教程！2016-02-15,程序员就是要不断进步！</p>
+                <p class="impression">十分感谢作者和译者！</p>
+                <p class="impression">试试看</p>
+                <p class="impression">wanghunk test pull request</p>
+                <p class="impression">提交测试下pull request</p>
+                <p class="impression">学习Github，必选《GitHub入门与实践》</p>
+                <p class="impression">向提交过pull request的分支添加提交</p>
+                <p class="impression">这个东东不错啊！</p>
+                <p class="impression">
+                GitHub pull request test!Thanks!此书为GitHub的经典入门教材，受益匪浅(<a href="https://github.com/pengfeifan">@Supernatural</a>)
+                </p>
+                <p class="impression">我还真不知道怎么用这个功能 ，以前写了东西没有pull request 过，谢谢你们给这个机会! </p>
+                <p class="impression">第一次我是在主分支上写的，这个习惯不好，</p>
+                <p class="impression">学习了</p>
+                <p class="impression">就是单纯的来测试一下，别想多啦。^_^ </p>
+                <p class="impression">感谢作者！</p>
+                <p class="impression">2016-01-13,发自我的ubuntu,我的第一个Pull Request</p>
+                <p class="impression">这是一段专属的话</p>
+                <p class="impression">此书绝对是git学习之典范，我已推荐朋友们都去买了！制作精良，受益匪浅！- Aaron Ryuu</p>
+                <p class="impression">我也来练习练习，谢谢作者了！！</p>
+                <p class="impression">这书挺不错,竟然还有这种可以操作的案例。</p>
+                <p class = "impression">大家好，我是李长青， 第一次用github pull request 功能，感觉棒棒哒，希望老大给个支持，接受请求</p>
+                <p class="impression">通过学习，发现git真的是一个非常强大的东西，这也是我的第一个pull request，希望它不是最后一个！</p>
+                <p class="impression"> 测试pull request,书写的很详细。<a href="http://github.com/Finax">@Finax</a></p>
+                <p class="impression">This is really cool stuff! <a href="https://github.com/liujinmarshall">@liujinmarshall</a></p>
+                <p class="impression">这本书算是手把手的教我使用github来管理代码，详细且易懂。极力推荐github的初学者用此书。(<a href="https://github.com/kalick-f">@kalick-f</a>)</p>
+                <p class="impression">超赞的书！有兴趣的大家一起研究！西安电子科技大学大兴国禅寺附属北雷男子修道院某攻城狮到访。(<a href="https://github.com/xdgcc">@xdgcc</a>)</p>
+                <p class="impression">对于github小白的我来说这本书简直就是神器(<a href="https://github.com/mrlonely001">@mrlonely001</a>)</p>
+                <p class="impression">git hub is good</p>
+                <p class="impression">《gitHub 入门与实战》。</p>
+                <p class="impression">《gitHub 入门与实战》这是一本好书，尝试发送Pull Request。</p>
+                <p class="impression">循序渐进地教授我使用github，可以很好的适应这网站。</p>
+                <p class="impression">这本书对我的帮助很大。</p>
+                <p class="impression">这是对本书内容的感想并要发送Pull Request。</p>
+                <p class="impression">正在学习中，感谢作者。</p>
+                <p class="impression">这本书很适合新手学习！(@HoobeeTechnology)</p>
+                <p class="impression">图灵出版的书，一般都不错，这本蛮好的，--来自南京龙王山皇家气象学院</p>
+                <p class="impression">今天是2016年0824,下午财务要报销单，可cto不再啊，没法签字啊。----来自easystack的easystacker</p>
+                <p class="impression">来测试一下Pull Request,书很好，正在学习！</p>
+                <p class="impression">翻译很棒的书，大赞，希望能弄一个读者列表，译者再有新书可以通知到我们啊！</p>
+                <p class="impression">体验社会化编程的魅力从github开始XD，虐狗节前一天到访。 2015_11_10(<a href="https://github.com/piperck">@piperck</a>)</p>
+                <p class="impression">This is my first pull request!(<a href="https://github.com/chenjx1990">@chenjx1990</a>)</p>
+                <p class="impression">第一次学习github，这是本非常好的入门书。(@guanwei)</p>
+                <p class="impression"> Hello, GitHub! </p>
+                <p class="impression">非常棒的一本书，必须一边学一边练才可以。(<a href="https://github.com/wanghongrui">@wanghongrui</a>)</p>
+                <p class="impression">我也在学习中，边学边练2015-10-24</p>
+                <p class="impression">终于有讲 GitHub 而不只是讲 Git 的书了</p>
+                <p class="impression">非常棒的一本书，尝试从Github桌面客户端提交pull request!(<a href="https://github.com/xwzpp">@xwzpp</a>)</p>
+                <p class="impression">这本书非常好，讲解的很详细，对想学习Github的同学帮助很大！(<a href="https://github.com/xwzpp">@xwzpp</a>)</p>
+                <p class="impression">第一次尝试Pull Request，特此纪念，pikeyoung</p>
+                <p class="impression">非常好的一本书，来尝试Pull Request！<a href="https://github.com/zssasa">(@zssasa)</a></p>
+                <p class="impression">Love&Peace <a
+                href="https://github.com/perfectchee">@perfectchee</a></p>
+                <p class="impression">学习中！！！@<a href="https://github.com/tspoison">tspoison</a></p>
+                <p class="impression">What a nice book!  @<a href="https://github.com/thippo">thippo</a></p>
+                <p class="impression">My first pull request!<a href="https://github.com/wangxj524">@wangxj524</a></p>
+                <p class="impression">做个简单的尝试。(<a href="https://github.com/BobGu1978">@BobGu1978</a>)</p>
+                <p class="impression">这本书通俗易懂，受益匪浅，顶起up!up!up!(<a href="https://github.com/benjaminwhx">@benjaminwhx</a>)</p>
+                <p class="impression">简单易懂的入门手册。</p>
+                <p class="impression">还是需要多加练习。习惯了TSVN，对新事物就不大容易接受了。(<a href="https://github.com/BobGu1978">@BobGu1978</a>)</p>
+                <p class="impression">头一次见这么有良心的译者。另外日本人写的技术书就是简单易懂。(<a href="https://github.com/unhappy224">@unhappy224</a>)</p>
+                <p class="impression">怎么说呢，作者翻译这本书，还把这个示例网站也翻译了，真是够用心了。<a href="https://github.com/heatech">@heatech</a> 2015年8月23日</p>
+                <p class="impression">我是中文版第一个PR~嘿嘿(2015-07-21 <a href="https://github.com/MofeLee">@MofeLee</a>)</p>
+                <p class="impression">Love You!!!</p>
+                <p class="impression">Very good book for learning GitHub. Thanks a lot!(@Jasmine-MIG)</p>
+                <p class="impression">Hello! Pull Request!!</p>
+                <p class="impression">GitHub is great.</p>
+                <p class="impression">very useful</p>
+                <p class="impression">或许是最好的Github入门书籍，翻译得也非常棒 (@zhzeng)</p>
+                <p class="impression">First Pull request. Thank you.</p>
+                <p class="impression">This is Nathan, my first full request in first-pr</p>
+                <p class="impression">GOOOOOOOOOOD!!!(@masaka)</p>
+                <p class="impression">Hello GitHub!!</p>
+                <p class="impression">Hello GitHub world!!(<a href="https://github.com/ohbarye">@ohbarye</a>)</p>
+                <p class="impression">My first PR!</p>
+                <p class="impression">这本书非常贴合实践.(@zhaoqiest)</p>
+                <p class="impression">This is a good book, help me find my way to github,thanks very much! (@HIROCASTER)</p>
+                <p class="impression">Great GitHub, Great Pull request.</p>
+                <p class="impression">My first pull request </p>
+                <p class="impression">非常不错的一本书！</p>
+                <p class="impression">MiracleWong's first PR!(<a href="https://github.com/miraclewong">@MiracleWong</a>)</p>
+                <p class="impression">Hello iTuring~~ <a href="https://github.com/xring" target="_blank">@xring</a></p>
+                <p class="impression">@berton</p>
+                <p class="impression">Learning this book. Very good!@ysincos</p>
+                <p class="impression">我的第一个 pull request.</p>
+                <p class="impression">I like this book very much.</p>
+                <p class="impression">非常实用,谢谢.@jeff</p>
+                <p class="impression">感受到Github的强大之处，谢谢！@linjk</p>
+                <p class="impression">下面的勘误pp159哪有那行代码啊？还有提交一处勘误p121的创建特性分支的代码$git checkout -b work gh-pages中的gh-pages是不是应该删掉？-b参数后面应该只能提交一个新分支名作为参数然后切换过去呀？@scplay</p>
+                <p class="impression">PR from X-Lion.</p>
+                <p class="impression">interesting book for GitHub.first PR.</p>
+                <p class="impression">新人sunbird89629前来报到</p>
+                <p class="impression">对我很有帮助！20150820 七夕快乐！</p>
+                <p class="impression">这本书很不错，对 Git 和 GitHub 的介绍都很详尽，笔调也很轻松，适合闲暇时阅读。（<a href="https://github.com/hbkdsm">@hbkdsm</a>）</p>
+                <p class="impression">感谢译者搭建测试平台.2015-08-31.@zh</p>
+                <p class="impression">简单易懂，入门必读！</p>
+                <p class="impression">这本书很有趣@alanyin </p>
+                <p class="impression"> 对《github 入门和实践》的Pull Request 进行实践。哈哈，by JieXiSheDe。(<a href="https://github.com/jiexishede">@jiexishede</a>) </p>
+                <p class="impression"> 这本书挺好(<a href="https://github.com/jiexishede">@jiexishede</a>) 。</p>
+                <p class="impression"> 这本书很有意思。by JieXiSheDe(<a href="https://github.com/jiexishede">@jiexishede</a>) </p>
+                <p class="impression"> 谢谢作者提供练习环境！(@sycai) </p>
+                <p class="impression"> 到此一游，推荐此书(<a href="https://github.com/boylegu">@boylegu</a>) </p>
+                <p class="impression">书很不错</p>
+                <p class="impression">我正在进行测试呢，中秋节快乐！</p>
+                <p class="impression">通俗易懂</p>
+                <p class="impression">这本书写的很好，非常适合初学者入门，看了之后懂了很多，提供的例子非常好。</p>
+                <p class="impression">这本书非常的棒。</p>
+                <p class="impression">Very good!!! (<a href="https://github.ocm/DavidChenLiang">@DavidChen</a>)</p>
+                <p class="impression">这本书读着很有趣。</p>
+                <p class="impression"> 啦啦啦啦~~~第一本github的书。（@huangyifan）</p>
+                <p class="impression">这本书非常的棒!!!!。</p>
+                <p class="impression">良心作品,谢谢</p>
+                <p class="impression">通俗易懂，UP!</p>
+                <p class="impression">这本书的亮点，一半在内容，一半在翻译，译者的用心大家都看得到，能真正让读者领会原书的风采，看得懂，做得出。 (<a href="https://github.com/crystalDf">@crystalDf</a>) </p>
+                <p class="impression">这本书特别适合初学者!</p>
+                <p class="impression">书很好，真的，通俗易懂，以前没看过日式的技术书，让我对日式技术书产生好感了(楼上说的译者用心，完全同意)。我要来尝试pr了，思密达，哟西，雅蠛蝶，一库哟，刚把得，不要不要的<a href="https://github.com/yangyangyyluck">@yangyangyyluck</a></p>
+                <p class="impression">简单易学，一步步告诉你怎么操作 Zz !</p>
+                <p class="impression">Added by liuzenghui2007!</p>
+                <p class="impression">好书，其实一直有在用github，但真不知道有这么多面向编程人员的贴心设定，赞！</p>
+                <p class="impression">发现别的项目的bug了,才想到翻出PR好好看看 (<a href="https://github.com/csufuyi">@csufuyi</a>) </p>
+                <p class="impression">这本书对github的功能点描述得很详细，虽然github页面已经多多少少有些改动，但书本的讲解还是可以与之起来！--by kelvin</p>
+                <p class="impression">很好的熟悉了Pull Request!</p>
+                <p class="impression">第一本读的还有意思点的git书籍（@guangling）</p>
+                <p class="impression">做个实践</p>
+                <p class="impression">正在学这本书，把我从一个github小白渐渐变成了入门者，很喜欢这本书，很适合初学者。</p>
+                <p class="impression">这几天都在学，感觉通过这本书学会了好多知识，感谢作者</p>
+                <p class="impression"> 我也来留个脚印，书写的很棒！</p>
+                <p class="impression">入职新公司已经四个月了，一直对Git的使用感到有些困惑，这本书为我指明了方向，大赞！！</p>
+                <p class="impression"> 正在通过这本书学习GitHub, 感谢作者。 By Mr.du</p>
+                <p class="impression"> 很好的一本书~</p>
+                <p class="impression"> 书真心不错，感谢作者! 适应了大部分操作。</p>
+                <p class="impression">very interesting</p>
+                <p class="impression"> 一本很实用的书，非常不错！</p>
+                <p class="impression">this book is so  interesting,I like it.</p>
+                <p class="impression"> 第一次pull request  花了点时间，不过收获很大。by weiwei</p>
+                <p class="impression"> 第一次pull request，激动中。</p>
+                <p class="impression"> 本书的作者和译者都很用心，100个赞！<a href="https://github.com/congyihao" >@congyihao</a></p>
+                <p class="impression"> 感谢，讲解的很好！很贴心^_^</p>
+                <p class="impression"> 书的内容很不错，由浅入深。而且还提供的了能够pull request的实践，赞！</p>
+                <p class="impression">这本书读者很有趣，棒棒哒！</p>
+                <p class="impression"> 感受下git的魅力</p>
+                <p class="impression">学习git</p>
+                <p class='impression'>好书，努力学习git</p>
+                <p class="impression">来测试pull request<a href="http://github.com/AlanYume">@AlanYume</a></p>
+                <p class="impression">棒棒哒</p>
+                <p class="impression"> 谢谢作者，实践完毕！(<a href="https://github.com/dzxxbj">@dzxxbj</a>) </p>
+                <p class='impression'>好书，努力学习git @cache0928</p>
+                <p class="impression">我也来个pr</p>
+                <p class="impression">棒棒哒(@LiMingzhi)</p>
+                <p class="impression">测试 pull request, 怎么找中文的仓库? </p>
+                <p class="impression">测试 pull request, by comix </p>
+                <p class="impression">First Pull Request by <a href="https://github.com/taolian">@taolian</a></p>
+                <p class="impression">还可以让我写感想，太棒啦</p>
+                <p class="impression">原来这里是中文版的啊~~~~(<a href="https://github.com/luoshi006">@luoshi006</a>)</p>
+                <p class="impression">测试Pull Request——by <a href="https://github.com/XiamingChen">Xiaming_Chen</a>,a Java Learner</p>
+                <p class="impression">test PR</p>
+                <p class="impression">大家好,<p>
+                <p class="impression">测试一下<p>
+                <p class="impression">Testing!<p>
+                <p class="impression">提交一个PR，oh yeah！:yeah:</p>
+                <p class="impression">内容很不错，由浅入深</p>
+                <p class="impression">这本书读着很有趣</p>
+                <p class="impression">実に面白い，真的很有趣</p>
+                <p class="impression">非常感谢译者，翻译得很用心，很适合国人看</p>
+                <p class="impression">pull request 测试！  --来自某新手_(:зゝ∠)_</p>
+                <p class="impression">hi!我是ChaunceyZhong,这本书不仅帮助我更容易地学习gihub,也让我实践github操作的机会！一举俩的！必须赞！！！</p>
+                <p class="impression">很赞的翻译！！</p>
+                <p class="impression">good for newguy</p>
+                <p class="impression">网站设计得不错</p>
+                <p class="impression">书写的太好了，第一次尝试Pull Request(@ladyhua)</p>
+                <p class="impression">学习github，来练练手。(^0^)</p>
+                <p class="impression">大家好, 我是来学习的(@chengchaos)O(∩_∩)O哈！</p>
+                <p class="impression">这是一段专属的话，，，，，，，，</p>
+                <p class="impression">实践出真知嘛，哈哈哈（swtar）</p>
+                <p class="impression">非常赞啊，这样练手技术很难不提高啊~</p>
+                <p class="impression">第一次使用Pull Request（@shaguaizao)</p>
+                <p class="impression">Hello world!I love Github!</p>
+                <p class="impression">实践出真知嘛，哈哈哈（swtar）..........努力学习专研此书   </p>
+                <p class="impression">在日亚上看到这本书没想到有中文版呢www书写得很棒！还有练习太感动了ww！谢谢(づ￣ 3￣)づ！</p>
+                <p class="impreesion">哈哈 我也来测试一下。</p>
+                <p class="impreesion">Xiao han ying, ai ni 521!</p>
+                <p class="impression">My First Pull Request! Fighting!!!</p>
+                <p class = "impression">很详细的一本书，试着Pull Request</p>
+                <p class = "impression">First Pull Request by Finrod</p>
+                <p class='impression'>动手试一试，参与一下</p>
+                <p class='impression'>just have a try</p>
+                <p class="impression">第一次尝试</p>
+                <p class="impression">好书，介绍的很浅显易懂，入门必看！(@yjlt)</p>
+                <p class="impression">超级棒的一本书，我很喜欢。</p>
+                <p class="impression">再测试一下，感谢作者。</p>
+                <p class="impression">GitHub入门与实践Chap. 6 pull request 纪念。@billlai95"</p>
+                <p class="impression">这本书真的很好啊，是github的入门必读，通俗易懂。专属评价！！！@mxblade</p>
+                <p class="impression">Hello!</p>
+                <p class="impression">测试数据</p>
+                <p class="impression">这本书读着很有趣，以后工作了可能会遇到。(@upcgiser)</p>
+                <p class="impression">对新手非常友好的GitHub入门书！谢谢作者和翻译～(<a href="https://github.com/Tonara">@Tonara</a>)</p>
+                <p class="impression">good</p>
+                <p class="impression">非常好，GitHub必读！！2016/5/5</p>
+                <p class="impression">Very good!</p>
+                <p class="impression">Hello GitHub! By JSH</p>
+                <p class="impression">我是mynane，和不错！2016/5/12</p>
+                <p class="impression">谢谢作者和译者！第一次尝试pull request (<a href="https://github.com/daocunyang">@daocun</a>)</p>
+                <p class="impression">github入门与实践，第一次pull request纪念20160517-10:52(@jiangzikai)</p>
+                <p class="impression">感觉这本书非常的棒，flyhzgq</p>
+                <p class="impression">A good intro book for learning git.</p>
+                <p class="impression">刻录一下，谨作纪念，Chason Hwang, 2016-05-20，南京，江苏</p>
+                <p class="impression">第一次使用Pull Request，随便说一下 书不错。(<a href="https://github.com/ichoentao">@icheontao</a>)</p>
+                <p class="impression">我是ahorawzy,这是我第一次用VIM来修改。这本书讲得很好，手把手教会！</p>
+                <p class="impression">学习使用Pull Request.(@MappleHero) </p>
+                <p class="impression">不错的一本书，正在学习使用中！对github有一个全新的理解(<a href="https://github.com/liujkang">@little peas</a>) </p>
+                <p class="impression">这本书对我帮助还是挺大的.(@idKevin)</p>
+                <p class="impression">第一次使用Pull  Request，很鸡冻，求上墙！（<a href="https:///github.com/caiyaoyao">@caiyaoyao</a>）</p>
+                <p class="impression">I'm KeepThinking!!!</p>
+                <p class="impression">github更新的有点快啊  但是书不错（@DanterM）</p>
+                <p class="impression">要把git用在工作的各个方面，不仅仅是Coding</p>
+                <p class="impression">我现在还在公司加班学习啦，Pull Request!</p>
+                <p class="impression">I'm trying!</p>
+                <p class="impression">Hello,GitHub.(<a href="https://github.com/pengShell">@pengShell</a>)</p>
+                <p class="impression">Novopo's Pull Request(<a href="http://www.novopo.cn" target="_blank">Novopo's Blog</a>)</p>
+                <p class="impression">Thank you</p>
+                <p class="impression">Git is wonderful, this book is amazing</p>
+                <p class="impression">书不错。</p>
+                <p class="impression">jhj书不错。</p>
+                <p class="impression">一直知道学习的最初动力，荏苒爱你(<a href="https://dsb123dsb.github.io" target="_blank">choe's Blog</a>)</p>
+                <p class="impression"> 第一次使用，尝试一下。（@mtyang）</p>
+                <p class="impression"> 第一次使用pull request，尝试一下。（@ivantan）</p>
+                <p class="impression"> Hello World! Great Moment! （<a href="https:///github.com/AuroraXYY">@AuroraXYY</a>）</p>
+                <p class="impression">这是一本不错的github入门书籍，一直在抽空学习。 </p>
+                <p class="impression">学习使用github，留个纪念</p>
+                <p class="impression">学习使用github111111111111111，留个纪念</p>
+                <p class="impression">github入门书籍，学习pull request</p>
+                <p class="impression"> 这本书不错，我很喜欢</p>
+                <p class="impression">这一版块pull request确实很好，平时总是发不出自己的pull request</p>
+                <p class="impression">huoqianliuming1</p>
+                <p class="impression">写的不错，不过要是能够更新就好了，毕竟有的内容也过时了</p>
+                <p class="impression">学习使用github(zman@2016-07-06)</p>
+                <p class="impression">A good book for learning Git.这是一本非常好的教程。赞一个么么么的</p>
+                <p class="impression">试试 (@yunyun) </p>
+                <p class="impression">第一次自己动手尝试PR，感谢作者提供的这个实际操作的平台(@xsyb82)</p>
+                <p class="impression">非常棒的书和平台，git和github讲述的非常清楚，而且带着读者手动操作，印象深刻</p>
+                <p class="impression">非常好的GitHub资料，自己动手试一下PR，感谢</p>
+                <p class="impression">对github pages比较感兴趣(@fireholder)</p>
+                <p class="impression">很棒的一本github入门书籍，赞！这里做下PR测试！xiaolong19881116</p>
+                <p class="impression">cdhp前来学习github,再差几个就300了-_-,2016/7/20 <a href="https://github.com/chendonghp">@chendonghp</a></p>
+                <p class="impression">感谢作者、译者、图灵社区、github - @supercong 20160722</p>
+                <p class="impression">Thanks very much. This is a good book which I finish reading in 2 days. --- By Zeming @ 2016-07-27</p>
+                <p class="impression">感谢作者，这是一本好书，同时这种实践的学习方式很好，谢谢作者不辞辛苦专门弄了一个仓库用于体验Pull Request</p>
+                <p class="impression">It's a good tutorial, thanks a lot. @scream7 </p>
+                <p class="impression">前几章的知识掌握之后,日常确实够用了,但是实际生产应该还有很多要学,thanks<a href="http://www.wwlblog.ml">欢迎来我的网站看看</a></p>
+                
+                <p class="impression">Standing on Shoulders of Giants!--<a href="http://github.com/runxindong" target="_blank">runxindong</a>   2016-07-30 17:15:13</p>
+                <p class="impression">just for test 测试一下！！！！！ liuran</p>
+                <p class="impression">just for test 测试一下！！！！！ liuran 第二次测试</p>
+                <p class="impression">github太好玩了，我也来试试，嘻嘻</p>
+                <p class="impression">Sehr interessant!</p>
+                <p class="impression">社会化编程的思想创造了一个崭新的时代！(@mantouRobot)</p>
+                <p class="impression">书很棒！！会安利给其他人的。--<a href="http://github.com/INGslh">INGslh</a></p>
+                <p class="impression">通过详细的实践步骤，很容易入手学会。好书！！！！！！！！！！！</p>
+                <p class="impression">学习了，本书简明扼要重点突出。@kevin-teddy</p>
+                <p class="impression">学习了，本书是一本很好的Github的入门书籍。@vincnshi</p>
+                <p class="impression">No.334-Mr.Geo</p>
+                <p class="impression">jjjc</p>
+                <p class="impression">如果我说这本书的坏话的话，会不会被删了呢？</p>
+                <p class="impression">just try to use pull request @Wetoria</p>
+                <p class="impression">哈哈，尝试了!</p>
+                <p class="impression">我好興奮啊!!! 😸🐱🐎🎉🎁 (by joyfeel)</p>
+                <p class="impression">这本书不错，实践是最重要的，测试一下我的pull request会不会被采纳哦</p>
+                <p class="impression">Nice book</p>
+                <p class="impression">实践一下pull request~ nice! (by cumulus27)</p>
+                <p class="impression">这是一本全面了解Git的好书</p>
+                <p class="impression">hello everyone, my github is baozh2016, welcome to my zone and learn together, this is my first test.^v^</p>
+                <p class="impression">I love the book very much. Thanks a lot for the tutorial :)</p>
+                <p class="impression">很不错的一本书。</p>
+                <p class="impression">this is a nice book! 	by-sylvia</p>
+                <p class="impression">成为前端攻城狮的必经之路! 2016.09.25</p>
+                <p class="impression">测试提交功能,互动参与的环节很棒 @ym2067</p>
+                <p class="impression">测试pull request. elance@20161004</p>
+                <p class="impression">php coder~! 2016.09.28</p>
+                <p class="impression">刚看完Udacity的视频教程，比较适合初学者，通俗易懂，但总有一种意犹未尽的感觉，这本书涵盖的知识更广，补充了许多在实际开发中实用的技巧，自己在书上作了很多标记，方便今后快速回顾@Shouduo 2016.09.27</p>
+                <p class="impression">为什么有人还坚持svn, 真是不解！！！ 2016/10/04《</p>
+                <p class="impression">I came; I saw; I conquered. --<a href="https://github.com/jokhan">jokhan</a> | 2016.10.05</p>
+                <p class="impression">学习github,from @chenshaoh 2016.10.08</p>
+                <p class="impression">pull request test</p>
+                <p class="impression">少有的理论和实践平衡的恰到好处的好书！ 2016.10.07</p>
+                <p class="impression">第二次pull request，应自动添加至已发送的pull request中 2016.10.07</p>
+                <p class="impression">很不错的一本书。</p>
+                <p class="impression">学到这终于弄有点头目了，加油</p>
+                <p class="impression">不错的书</p>
+                <p class="impression">只有参与到社会化编程才能够提升自己的技术。 from正</p>
+                <p class="impression">不掌握git已经不行了 2016.10.17</p>
+                <p class="impression">我喜欢</p>
+                <p class="impression">哈哈哈哈加油</p>
+                <p class="impression">很好的入门书籍</p>
+                <p class="impression">不错不错，简单易懂，真是手把手了^_^</p>
+                <p class="impression">非常有意义的实践机会，感谢</p>
+                <p class="impression">学到这终于弄有点</p>
+                <p class="impression">感谢作者和译者。看了有一半了。xiuxiubiu。</p>
+                <p class="impression">不错，终于提交了一个pr。</p>
+                <p class="impression">书写的很不错，按照第6章来尝试留言，from，w934940943</p>
+                <p class="impression">很详细的一本书，之前都是看视频了解github，感觉书比较系统。还是在校学生，希望与各位大神多加交流，欢迎访问我的<a href="https://hurongling.github.io/cv-template">GitHub个人主页</a>嘻嘻(●'◡'●)~</p>	      
+                <h3>勘误</h3>
+                
+                <p>pp159</p>
+                <p>误<code>git clone git@github.com/用户名/hello-world.git</code>
+                <p>正<code>git clone git@github.com/用户名/Hello-World.git</code>
+                <p>p53</p>
+                <p>误<code>git rest --hard</code>
+                <p>正<code>git reset --hard</code>
+                
+                
+                <h3>读者反馈</h3>
+                <p>如果您对本网站有任何疑问，请<a href="http://www.ituring.com.cn/article/36242">联系我们</a>。</p>
+                
+            </section>
+        </div>
+        
+        <!-- FOOTER  -->
+        <div id="footer_wrap" class="outer">
+            <footer class="inner">
+                <p class="copyright">first-pr maintained by <a href="https://github.com/liubin">liubin</a></p>
+                <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+            </footer>
+        </div>
+        
+        <script type="text/javascript" src="javascripts/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                              $("#impression_num").text( $("p.impression").length );
+                              });
+            </script>
+        
+        <script type="text/javascript">
+            // var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            // document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+            </script>
+        <script type="text/javascript">
+            try {
+                // var pageTracker = _gat._getTracker("UA-31168931-1");
+                // pageTracker._trackPageview();
+            } catch(err) {}
+        </script>
+        
+        
+    </body>
+</html>
