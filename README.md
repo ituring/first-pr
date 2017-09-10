@@ -1,4 +1,4 @@
-# GitHub实践入门 ~ Pull Request引发的开发变
+# GitHub实践入门 ~ Pull Request引发的开发
 
 特设网站
 
