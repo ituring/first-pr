@@ -325,7 +325,7 @@ Full-Width Styles
   position: absolute;
   width: 210px;
   z-index: 10;
-  bottom: 25px;
+  bottom: 10px;
   right: 0;
   height: 85px;
 }
@@ -358,10 +358,8 @@ Full-Width Styles
   height:181px;
   text-indent: -5000px;
   overflow: hidden;
-  background: url(../images/cover.jpg) no-repeat top right;
+  background: url(../images/cover.jpg) no-repeat bottom right;
   margin-left: 10px;
-  margin-top:-10px;
-  transition: all .3s ease;
 }
 
 .zip_download_link:hover {
@@ -373,8 +371,7 @@ Full-Width Styles
 }
 
 .wdpress_link:hover {
-  /* background: url(../images/cover.jpg) no-repeat top right; */
-  margin-top:0;
+  background: url(../images/cover.jpg) no-repeat top right;
 }
 
 #main_content_wrap {
