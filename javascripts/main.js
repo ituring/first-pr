@@ -36,9 +36,5 @@ select.addEventListener('change', (e) => {
 
 draw(selectData);
 
-800
-20
-40
-
 
 
