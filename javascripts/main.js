@@ -13,6 +13,8 @@ var length = 20;
 var num = Math.ceil(marks.length / 20);
 var selectData = marks.slice(start, length);
 
+console.log(marks.length);
+
 var draw = function draw(data) {
 	var html = '';
 	data.forEach(function (item, i) {
