@@ -7,4 +7,9 @@
 Git冲突时的解决方法
 
 -  [Resolving merge conflicts](https://help.github.com/articles/resolving-merge-conflicts/)
+
+我是荆体凯  难道   哈哈哈  我喜欢github  真本书也是非常好
+
+
+
 -  [Resolving a merge conflict from the command line](https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/)
