@@ -5,20 +5,24 @@ var select = document.querySelector('.select');
 var marks = Array.prototype.slice.call(wrap.querySelectorAll('p'));
 var impression_num = document.querySelector('#impression_num');
 impression_num.textContent = marks.length;
+
+var stringArr = [];
+marks.forEach(function(item) {
+	stringArr.push(JSON.stringify(item.outerHTML));
+})
+
 wrap.innerHTML = '';
 
 var ul = document.createElement('ul');
 var start = 0;
 var length = 20;
-var num = Math.ceil(marks.length / 20);
-var selectData = marks.slice(start, length);
-
-console.log(marks.length);
+var num = Math.ceil(stringArr.length / 20);
+var selectData = stringArr.slice(start, length);
 
 var draw = function draw(data) {
 	var html = '';
 	data.forEach(function (item, i) {
-		html += item.outerHTML;
+		html += JSON.parse(item);
 	});
 	wrap.innerHTML = html;
 };
@@ -32,7 +36,7 @@ for (var i = 1; i < num + 1; i++) {
 
 select.addEventListener('change', function (e) {
 	var start = e.target.value - 1;
-	selectData = marks.slice(start * length, (start + 1) * length);
+	selectData = stringArr.slice(start * length, (start + 1) * length);
 	draw(selectData);
 });
 
