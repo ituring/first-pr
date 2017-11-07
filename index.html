@@ -68,8 +68,12 @@
 <p>目前，本书里涉及到的示例仓库，现在由本人（译者）以及志愿者（包括发起Pull Request的读者）来维护。然而，在将来随着时间的流逝可能会出现响应不及时的现象，甚至无人响应的可能性。请各位读者参考一下第7章或者代码仓库中的文档，协助我们。</p>
 
 <h3>读者来稿</h3>
+
 <p>您如果有对本书的读后感，或者只是想单纯测试一下，都可以发送Pull Request。</p>
 <p>(现共有<span id="impression_num"></span>条用户来稿)</p>
+
+<select class="select"></select>
+<section class="wrap">
 
 <p class="impression"><marquee><font color=aqua>Thanks for giving us thus perfect GitHub learning environment (@duruonanni)</font></marquee></p>
 <p class="impression"><marquee><font color=red style="text-shadow: 5px 5px 5px #a0a0a0" >很不错的一本书，学到了很多东西，程序员的路还很长，keep learning,加油</font></marquee></p>
@@ -173,11 +177,11 @@
 <P class="impression">第一次尝试pull request，兴奋</p>
 <p class="impression">书很好,来看看自己的成果.</p>
 <P class="impression"> 非常感谢 令人感动 -- UConn  </p>
-<p class="impression" style="font-family: 'Microsoft YaHei'; font-size: 15px; background-color: #dfdfdf; border: 1px solid #999; border-radius: 4px; box-shadow: 2px 2px 2px rgba(0, 0, 0, .3); color: #333; position: relative;"href="https://github.com/daohewang"><strong>新手驾到，谢谢作者，个人地址 </strong><a href="https://github.com/liuxipeng">https://github.com/liuxipeng</a><span style="font-size: 12px; color: #999; position: absolute; right: 5px;">欢迎关注我的github,一起研究学习</span></p>
+<p class="impression" style="font-family: 'Microsoft YaHei'; font-size: 15px; background-color: #dfdfdf; border: 1px solid #999; border-radius: 4px; box-shadow: 2px 2px 2px rgba(0, 0, 0, .3); color: #333; position: relative;" href="https://github.com/daohewang"><strong>新手驾到，谢谢作者，个人地址 </strong><a href="https://github.com/liuxipeng">https://github.com/liuxipeng</a><span style="font-size: 12px; color: #999; position: absolute; right: 5px;">欢迎关注我的github,一起研究学习</span></p>
 <p class="impression" style="font-size:30px;">新手来学习，这本书不错，一步一步跟着教程练习很快就上手了，谢谢作者,自己也创建了 <a>https://github.com/chaoCN</a></p>
 <p class="impression" style="font-size:24px;color:yellow;">This is a test!-Zerox</p>
 <p class="impression" style="font-size:24px;color:green;">这真是一本好书啊! 第一次pull request，好激动。我从南京发来贺电！</p>
-<p class="impression" style="font-family: 'Microsoft YaHei'; font-size: 15px; background-color: #dfdfdf; border: 1px solid #999; border-radius: 4px; box-shadow: 2px 2px 2px rgba(0, 0, 0, .3); color: #333; position: relative;"href="https://github.com/daohewang">多谢作者，正在学习中^^&nbsp;<span style="font-size: 12px; color: #999; position: absolute; right: 5px;">欢迎关注我的github,一起研究学习</span></p>
+<p class="impression" style="font-family: 'Microsoft YaHei'; font-size: 15px; background-color: #dfdfdf; border: 1px solid #999; border-radius: 4px; box-shadow: 2px 2px 2px rgba(0, 0, 0, .3); color: #333; position: relative;" href="https://github.com/daohewang">多谢作者，正在学习中^^&nbsp;<span style="font-size: 12px; color: #999; position: absolute; right: 5px;">欢迎关注我的github,一起研究学习</span></p>
 <p class="impression">目前正在学习中，以后会学习更多有关Git相关的知识或源码 (@BeCareful) </p>
 <P class="impression">感谢作者，致敬！</p>
 <p class="impression">手把手地教学 Github，确实是入门的好选择！（@tequlia2pop）</p>
@@ -485,7 +489,7 @@
 <p class="impression">这本书非常好，讲解的很详细，对想学习Github的同学帮助很大！(<a href="https://github.com/xwzpp">@xwzpp</a>)</p>
 <p class="impression">第一次尝试Pull Request，特此纪念，pikeyoung</p>
 <p class="impression">非常好的一本书，来尝试Pull Request！<a href="https://github.com/zssasa">(@zssasa)</a></p>
-<p class="impression">Love&Peace <a href="https://github.com/perfectchee">@perfectchee</a></p>
+<p class="impression">Love&amp;Peace <a href="https://github.com/perfectchee">@perfectchee</a></p>
 <p class="impression">学习中！！！@<a href="https://github.com/tspoison">tspoison</a></p>
 <p class="impression">What a nice book!  @<a href="https://github.com/thippo">thippo</a></p>
 <p class="impression">My first pull request!<a href="https://github.com/wangxj524">@wangxj524</a></p>
@@ -919,6 +923,8 @@
 <p class="impression">pull request study test</p>
 <p class="impression">新手折腾了半天，还是不会更新Pull Request，只好删除重新来过，好囧</p>
 
+</section>
+
 <h3>勘误</h3>
 
 <p>p159</p>
@@ -944,11 +950,7 @@
     </div>
 
 <script type="text/javascript" src="javascripts/jquery.min.js"></script>
-<script type="text/javascript">
-  $(document).ready(function(){
-    $("#impression_num").text( $("p.impression").length );
-  });
-</script>
+<script type="text/javascript" src="javascripts/main.js"></script>
 
 <script type="text/javascript">
   // var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
