@@ -1,4 +1,4 @@
-# GitHub实践入门 ~ Pull Request引发的开发变革
+# GitHub实践入门 ~ Pull Request引发的开发变革 。
 
 特设网站
 
