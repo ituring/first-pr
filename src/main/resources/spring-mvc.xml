@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/mvc
+                           http://www.springframework.org/schema/mvc/spring-mvc.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd ">
+    <!--开启注解扫描-->
+    <context:component-scan base-package="xyz.xlong99">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+    <bean id="jsonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+        <property name="supportedMediaTypes">
+            <list>
+                <value>application/json;charset=UTF-8</value>
+            </list>
+        </property>
+    </bean>
+    <!--视图解析器-->
+<!--    <bean id="internalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
+<!--        <property name="prefix" value="/WEB-INF/pages/"/>-->
+<!--        <property name="suffix" value=".jsp"/>-->
+<!--    </bean>-->
+
+    <!--过滤静态资源-->
+<!--    <mvc:resources mapping="/css/**" location="/css/"/>-->
+<!--    <mvc:resources mapping="/images/**" location="/images/"/>-->
+<!--    <mvc:resources mapping="/js/**" location="/js/"/>-->
+
+    <!--    配置文件解析器-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="defaultEncoding" value="UTF-8"/>
+        <property name="maxUploadSize" value="10485760"/>
+    </bean>
+    <!--    开启springmvc注解支持-->
+<!--    <mvc:annotation-driven/>-->
+
+<!--    配置时间类型转换为指定格式的JSON字符串-->
+    <mvc:annotation-driven>
+        <mvc:message-converters>
+            <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+                <property name="objectMapper">
+                    <bean class="com.fasterxml.jackson.databind.ObjectMapper">
+                        <property name="dateFormat">
+                            <bean class="java.text.SimpleDateFormat">
+                                <constructor-arg type="java.lang.String" value="yyyy-MM-dd hh:mm:ss" />
+                            </bean>
+                        </property>
+                    </bean>
+                </property>
+            </bean>
+
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+</beans>

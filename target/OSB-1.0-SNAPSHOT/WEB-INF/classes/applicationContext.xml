@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!-- 使用annotation 自动注册bean, 并保证@Required、@Autowired的属性被注入 -->
+    <context:component-scan base-package="xyz.xlong99">
+        <!-- 不扫描controller -->
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+    <context:annotation-config/>
+
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+
+    <!--引入配置文件-->
+    <context:property-placeholder location="classpath:config.properties"/>
+    <!--    配置连接池-->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <property name="url" value="${jdbc.url}" />
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+
+        <!-- 配置初始化大小、最小、最大 -->
+        <property name="initialSize" value="1" />
+        <property name="minIdle" value="1" />
+        <property name="maxActive" value="100" />
+
+        <!-- 配置获取连接等待超时的时间 -->
+        <property name="maxWait" value="60000" />
+
+        <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+        <property name="timeBetweenEvictionRunsMillis" value="60000" />
+
+        <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+        <property name="minEvictableIdleTimeMillis" value="300000" />
+
+        <property name="validationQuery" value="SELECT 'x'" />
+        <property name="testWhileIdle" value="true" />
+        <property name="testOnBorrow" value="false" />
+        <property name="testOnReturn" value="false" />
+
+        <!-- 打开PSCache，并且指定每个连接上PSCache的大小 -->
+        <property name="poolPreparedStatements" value="true" />
+        <property name="maxPoolPreparedStatementPerConnectionSize" value="20" />
+
+        <!-- 配置监控统计拦截的filters -->
+        <property name="filters" value="stat" />
+    </bean>
+
+    <bean id="configProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="locations">
+            <list>
+                <value>classpath*:config.properties</value>
+            </list>
+        </property>
+    </bean>
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PreferencesPlaceholderConfigurer">
+        <property name="properties" ref="configProperties"/>
+    </bean>
+
+    <!--所有的Mapper都要继承SqlMapper-->
+<!--    <bean class="tk.mybatis.spring.mapper.MapperScannerConfigurer">-->
+<!--        <property name="basePackage" value="com.leah.www.dao"/>-->
+<!--        &lt;!&ndash; 3.2.2版本新特性，markerInterface可以起到mappers配置的作用，详细情况需要看Marker接口类 &ndash;&gt;-->
+<!--        &lt;!&ndash; 通用Mapper通过属性注入进行配置，默认不配置时会注册Mapper<T>接口&ndash;&gt;-->
+<!--        <property name="properties">-->
+<!--            <value>-->
+<!--                mappers=com.leah.www.common.MyMapper-->
+<!--            </value>-->
+<!--        </property>-->
+
+<!--    </bean>-->
+
+    <!--这里把mapper下的所有的mapper.xml文件全部引进来-->
+<!--    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean" lazy-init="false">-->
+<!--        <property name="dataSource" ref="dataSource"/>-->
+<!--        <property name="configLocation" value="classpath:mybatis/mybatis-config.xml"/>-->
+<!--        <property name="mapperLocations">-->
+<!--            <list>-->
+<!--                <value>classpath:mapper/*.xml</value>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+<!--    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate" scope="prototype">-->
+<!--        <constructor-arg index="0" ref="sqlSessionFactory"/>-->
+<!--    </bean>-->
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+
+    </bean>
+
+    <!-- 前台的事务管理 -->
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <!--注入jdbcTemplate-->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource">
+            <ref bean="dataSource"/>
+        </property>
+    </bean>
+    <!--    配置UserDao接口所在的包-->
+    <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="xyz.xlong99.dao"/>
+    </bean>
+</beans>
