@@ -14,6 +14,8 @@ marks.forEach(function(item) {
 wrap.innerHTML = '';
 
 var ul = document.createElement('ul');
+var hahtest=1;
+var hahhhhhhhhhhhh=23;
 var start = 0;
 var length = 20;
 var num = Math.ceil(stringArr.length / 20);
