@@ -1,4 +1,5 @@
 'use strict';
+#thank for test
 
 var wrap = document.querySelector('.wrap');
 var select = document.querySelector('.select');
