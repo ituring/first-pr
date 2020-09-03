@@ -1,0 +1,11 @@
+C:\BegVCSharp\Chapter09Code\Ch09ClassLib\bin\Debug\Ch09ClassLib.dll
+C:\BegVCSharp\Chapter09Code\Ch09ClassLib\bin\Debug\Ch09ClassLib.pdb
+C:\BegVCSharp\Chapter09Code\Ch09ClassLib\obj\Debug\Ch09ClassLib.csprojResolveAssemblyReference.cache
+C:\BegVCSharp\Chapter09Code\Ch09ClassLib\obj\Debug\Ch09ClassLib.dll
+C:\BegVCSharp\Chapter09Code\Ch09ClassLib\obj\Debug\Ch09ClassLib.pdb
+C:\Users\20191\Desktop\Chapter09code\Chapter09\Ch09ClassLib\bin\Debug\Ch09ClassLib.dll
+C:\Users\20191\Desktop\Chapter09code\Chapter09\Ch09ClassLib\bin\Debug\Ch09ClassLib.pdb
+C:\Users\20191\Desktop\Chapter09code\Chapter09\Ch09ClassLib\obj\Debug\Ch09ClassLib.csprojAssemblyReference.cache
+C:\Users\20191\Desktop\Chapter09code\Chapter09\Ch09ClassLib\obj\Debug\Ch09ClassLib.csproj.CoreCompileInputs.cache
+C:\Users\20191\Desktop\Chapter09code\Chapter09\Ch09ClassLib\obj\Debug\Ch09ClassLib.dll
+C:\Users\20191\Desktop\Chapter09code\Chapter09\Ch09ClassLib\obj\Debug\Ch09ClassLib.pdb
