@@ -1,6 +1,0 @@
-C:\Users\20191\Desktop\Chapter09code\Chapter09\ClassLibrary1\bin\Debug\ClassLibrary1.dll
-C:\Users\20191\Desktop\Chapter09code\Chapter09\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
-C:\Users\20191\Desktop\Chapter09code\Chapter09\ClassLibrary1\obj\Debug\ClassLibrary1.csprojAssemblyReference.cache
-C:\Users\20191\Desktop\Chapter09code\Chapter09\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache
-C:\Users\20191\Desktop\Chapter09code\Chapter09\ClassLibrary1\obj\Debug\ClassLibrary1.dll
-C:\Users\20191\Desktop\Chapter09code\Chapter09\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
