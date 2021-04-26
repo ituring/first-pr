@@ -1,0 +1,16 @@
+C:\Windows\System32\drivers\etc\
+
+打开hosts文件，加入以下内容并保存
+
+# GitHub Start 
+140.82.114.4 github.com
+199.232.69.194 github.global.ssl.fastly.net
+# GitHub End
+
+
+
+再cmd终端里面输入
+
+ipconfig/flushdns
+
+再重启浏览器就可以访问GitHub
