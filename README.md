@@ -4,7 +4,7 @@
 
   [http://ituring.github.io/first-pr/](http://ituring.github.io/first-pr/)
 
-Git冲突时的解决方法
+Git冲突时的解决2方法
 
 -  [Resolving merge conflicts](https://help.github.com/articles/resolving-merge-conflicts/)
 -  [Resolving a merge conflict from the command line](https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/)
