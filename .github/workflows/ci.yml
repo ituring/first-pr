@@ -1,0 +1,24 @@
+name: linux-x64-gpu
+on:
+  push:
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+
+jobs:
+  cuda-118:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Build
+        run: |
+          export GIT_REMOTE=$(git remote get-url origin)
+          export GIT_BRANCH=$(git branch --show-current)
+          echo ${GITHUB_REPOSITORY}
+          echo ${GIT_REMOTE}
+          echo ${GIT_BRANCH}
