@@ -9,19 +9,87 @@ by Jason Costello, @jsncostello
 MeyerWeb Reset
 *******************************************************************************/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -30,16 +98,27 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
 }
 
 table {
@@ -57,19 +136,24 @@ Theme Styles
 
 body {
   box-sizing: border-box;
-  color:#373737;
+  color: #373737;
   background: #212121;
   font-size: 16px;
-  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  font-family: "Myriad Pro", Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 10px 0;
   font-weight: 700;
-  color:#222222;
-  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
+  color: #222222;
+  font-family: "Lucida Grande", "Calibri", Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
 }
 
@@ -81,7 +165,7 @@ h1 {
 h2 {
   padding-bottom: 10px;
   font-size: 32px;
-  background: url('../images/bg_hr.png') repeat-x bottom;
+  background: url("../images/bg_hr.png") repeat-x bottom;
 }
 
 h3 {
@@ -158,33 +242,32 @@ img {
   -ms-box-shadow: 0 0 5px #ebebeb;
 }
 
-pre, code {
+pre,
+code {
   width: 100%;
   color: #222;
   background-color: #fff;
 
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal,
+    monospace;
   font-size: 14px;
 
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
-
-
-
 }
 
 pre {
   width: 100%;
   padding: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: auto;
 }
 
 code {
   padding: 3px;
   margin: 0 3px;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 pre code {
@@ -199,8 +282,10 @@ blockquote {
   border-left: 3px solid #bbb;
 }
 
-ul, ol, dl {
-  margin-bottom: 15px
+ul,
+ol,
+dl {
+  margin-bottom: 15px;
 }
 
 ul li {
@@ -231,26 +316,26 @@ hr {
   height: 1px;
   margin-bottom: 5px;
   border: none;
-  background: url('../images/bg_hr.png') repeat-x center;
+  background: url("../images/bg_hr.png") repeat-x center;
 }
 
 table {
   border: 1px solid #373737;
   margin-bottom: 20px;
   text-align: left;
- }
+}
 
 th {
-  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 10px;
   background: #373737;
   color: #fff;
- }
+}
 
 td {
   padding: 10px;
   border: 1px solid #373737;
- }
+}
 
 form {
   background: #f2f2f2;
@@ -280,14 +365,14 @@ Full-Width Styles
 #forkme_banner {
   display: block;
   position: absolute;
-  top:0;
+  top: 0;
   right: 10px;
   z-index: 10;
   padding: 10px 50px 10px 10px;
   color: #fff;
-  background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
+  background: url("../images/blacktocat.png") #0090ff no-repeat 95% 50%;
   font-weight: 700;
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
@@ -334,7 +419,7 @@ Full-Width Styles
   display: block;
   float: right;
   width: 90px;
-  height:70px;
+  height: 70px;
   text-indent: -5000px;
   overflow: hidden;
   background: url(../images/sprite_download.png) no-repeat bottom left;
@@ -344,7 +429,7 @@ Full-Width Styles
   display: block;
   float: right;
   width: 90px;
-  height:70px;
+  height: 70px;
   text-indent: -5000px;
   overflow: hidden;
   background: url(../images/sprite_download.png) no-repeat bottom right;
@@ -355,7 +440,7 @@ Full-Width Styles
   display: block;
   float: center;
   width: 128px;
-  height:181px;
+  height: 181px;
   text-indent: -5000px;
   overflow: hidden;
   background: url(../images/cover.jpg) no-repeat bottom right;
@@ -388,15 +473,13 @@ Full-Width Styles
   background: #212121;
 }
 
-
-
 /*******************************************************************************
 Small Device Styles
 *******************************************************************************/
 
 @media screen and (max-width: 480px) {
   body {
-    font-size:14px;
+    font-size: 14px;
   }
 
   #downloads {
@@ -409,7 +492,7 @@ Small Device Styles
   }
 
   #project_title {
-  font-size: 32px;
+    font-size: 32px;
   }
 
   h1 {
@@ -436,12 +519,12 @@ Small Device Styles
     font-size: 12px;
   }
 
-  code, pre {
+  code,
+  pre {
     min-width: 320px;
     max-width: 480px;
     font-size: 11px;
   }
-
 }
 
 /*******************************************************************************
@@ -449,7 +532,127 @@ Add
 *******************************************************************************/
 
 .impression {
-    background-color: white;
-    border: 1px;
-    padding: 10px;
+  background-color: white;
+  border: 1px;
+  padding: 10px;
+}
+
+/* 抖音字体 - begin */
+
+.text-magic {
+  position: relative;
+  width: 100%;
+  padding: 40px 0 0 0;
+  font-size: 16px;
+  font-family: Raleway, Verdana, Arial;
+  color: transparent;
+}
+.white {
+  position: absolute;
+  left: -10px;
+  width: 100%;
+  height: 1px;
+  background: #000;
+  z-index: 4;
+  animation: whiteMove 10s ease-out infinite;
+}
+
+.text-magic::before {
+  content: attr(data-word);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 42px;
+  color: red;
+  overflow: hidden;
+  z-index: 2;
+  filter: contrast(200%);
+  text-shadow: 1px 0 0 red;
+  animation: move 0.95s infinite;
+}
+
+.text-magic::after {
+  content: attr(data-word);
+  position: absolute;
+  top: 0;
+  left: -1px;
+  height: 42px;
+  color: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
+  z-index: 3;
+  color: cyan;
+  filter: contrast(200%);
+  text-shadow: -1px 0 0 cyan;
+  mix-blend-mode: lighten;
+  animation: move 1.1s infinite 0.2s;
+}
+
+@keyframes whiteMove {
+  9% {
+    top: 38px;
   }
+  14% {
+    top: 8px;
+  }
+  18% {
+    top: 42px;
+  }
+  22% {
+    top: 1px;
+  }
+  32% {
+    top: 32px;
+  }
+  34% {
+    top: 12px;
+  }
+  40% {
+    top: 26px;
+  }
+  43% {
+    top: 7px;
+  }
+  99% {
+    top: 30px;
+  }
+}
+
+@keyframes move {
+  10% {
+    top: -0.4px;
+    left: -1.1px;
+  }
+  20% {
+    top: 0.4px;
+    left: -0.2px;
+  }
+  30% {
+    left: 0.5px;
+  }
+  40% {
+    top: -0.3px;
+    left: -0.7px;
+  }
+  50% {
+    left: 0.2px;
+  }
+  60% {
+    top: 1.8px;
+    left: -1.2px;
+  }
+  70% {
+    top: -1px;
+    left: 0.1px;
+  }
+  80% {
+    top: -0.4px;
+    left: -0.9px;
+  }
+  90% {
+    left: 1.2px;
+  }
+  100% {
+    left: -1.2px;
+  }
+}
+/* 抖音字体 - end */
